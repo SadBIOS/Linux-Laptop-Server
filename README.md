@@ -137,3 +137,5 @@ systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.targe
 
 ## More information
 > **Note:** Some desktop environments (such as GNOME, KDE Plasma, or XFCE) may have their own power management settings that override these configurations. If the laptop still suspends when the lid is closed, check your desktop environment's power settings as well. You can check additional .md files from this repo, some of tested config with details information may include in future.
+
+You have to edit every logind config file as a root. 
