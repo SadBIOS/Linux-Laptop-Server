@@ -13,13 +13,13 @@ Open the configuration file with your preferred text editor:
 Using **nano**:
 
 ```bash
-sudo nano /etc/systemd/logind.conf
+nano /etc/systemd/logind.conf
 ```
 
 Or using **micro**:
 
 ```bash
-sudo micro /etc/systemd/logind.conf
+micro /etc/systemd/logind.conf
 ```
 
 Find the following line:
@@ -41,7 +41,7 @@ Save the file and exit the editor.
 Restart the `systemd-logind` service:
 
 ```bash
-sudo systemctl restart systemd-logind
+systemctl restart systemd-logind
 ```
 
 The laptop will now ignore lid close events.
@@ -79,7 +79,7 @@ Save the file and exit the editor.
 Apply the changes by rebooting:
 
 ```bash
-sudo reboot
+reboot
 ```
 
 After rebooting, the system will ignore lid close events.
