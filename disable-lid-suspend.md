@@ -1,4 +1,4 @@
-# Disable Laptop Lid Suspend on Proxmox VE 9.x
+# Disable Laptop Lid Suspend on Proxmox VE 9.X.Y
 
 ## Goal
 
