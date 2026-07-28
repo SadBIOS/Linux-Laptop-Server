@@ -1,9 +1,25 @@
-Disable Lid action
+Disable Laptop Lid action so that running your server 24/7 lid closed.
 ArchLinux
-	edit /etc/systemd/logind.conf
-	uncomment HandleLidSwitch=suspend to HandleLidSwitch=ignore
+	edit 
+	/etc/systemd/logind.conf
+	uncomment
+	HandleLidSwitch=suspend to HandleLidSwitch=ignore
 	 
 Debian (similar method to Arch but a different one is shown)
-	edit /etc/UPower/UPower.conf (as root)
-	change IgnoreLid=false to IgnoreLid=true
-	reboot after the change has been made
+	edit	
+	/etc/UPower/UPower.conf (as root)
+	change 
+	IgnoreLid=false to IgnoreLid=true
+	reboot
+
+Proxmox 
+	edit
+	/etc/systemd/logind.conf
+	change or add (suspend to ignore)
+	HandleLidSwitch=ignore
+	HandleLidSwitchExternalPower=ignore
+	HandleLidSwitchDocked=ignore
+	reboot
+
+ Disable Suspend Completely
+	systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
