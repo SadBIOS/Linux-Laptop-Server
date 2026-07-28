@@ -13,8 +13,13 @@ Open the configuration file:
 ```bash
 nano /etc/systemd/logind.conf
 ```
+or if you use micro
 
-Find or add these lines:
+```bash
+micro /etc/systemd/logind.conf
+```
+
+Find or add these lines and set =ignore:
 
 ```ini
 HandleLidSwitch=ignore
@@ -109,7 +114,7 @@ Verify:
 
 - The `HandleLidSwitch` lines are **not commented**.
 - `systemd-logind` has been restarted or the system rebooted.
-- No override files exist in `/etc/systemd/` or `/usr/lib/systemd/`.
+- No override files exist in `/etc/systemd/` or `/usr/lib/systemd/`
 
 ---
 
