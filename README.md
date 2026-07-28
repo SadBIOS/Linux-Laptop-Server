@@ -86,7 +86,7 @@ After rebooting, the system will ignore lid close events.
 
 ---
 
-## Proxmox VE 9.x
+## Proxmox VE 9.x.y
 ## 1. Edit the systemd logind configuration
 
 Open the configuration file:
